@@ -1,0 +1,35 @@
+# Python environment
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/ # Jupyter notebook checkpoints
+
+# Large Data files
+customer_support_tickets.csv # Your dataset - specify if large and don't want to track
+# Consider only tracking smaller datasets if necessary.
+# For large datasets, use DVC (Data Version Control) as a more advanced solution.
+
+# ML Model Artifacts
+streamlit_artifacts/ # This folder contains your saved models and scalers.
+                     # They can be large and might change frequently during development.
+                     # Only exclude if you are recreating them on deployment/CI or don't want to track versions.
+                     # If you want to track versions of *small* models, you could remove this line.
+
+# Operating System Files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# IDE and other tool specific files
+.vscode/
+*.iml # IntelliJ IDEA
+
+# Logs
+*.log
+log/
+
+# Any other local configuration files you might have
+config.ini
+.env
